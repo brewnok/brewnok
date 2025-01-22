@@ -1,4 +1,4 @@
 ## Hi there 👋
 
 This repo is the official site of brewnok.
-Developed with Nicepage!
+Click ![HERE](https://brewnok.com) to visit
