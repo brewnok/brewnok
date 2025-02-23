@@ -1,0 +1,15 @@
+<meta name="description" content="Brewnok is a leading software development and digital marketing company specializing in custom app development, Software development, web development, SEO, SEM, SMM,ads campaign and IT solutions. Boost your business with expert-driven technology and marketing strategies.">
+<meta name="keywords" content="IT services, cloud solutions, IT consulting, tech solutions, IT company,Software development, web development, mobile app development, custom software, SaaS development, cloud solutions, enterprise software, IT consulting, web design, UI/UX design, eCommerce development, CMS development, WordPress development, Shopify development, front-end development, back-end development, full-stack development, PHP development, Python development, Java development, React development, Angular development, digital marketing, SEO services, search engine optimization, local SEO, technical SEO, SEM services, PPC advertising, Google Ads, Facebook Ads, LinkedIn Ads, content marketing, branding, lead generation, online marketing, social media marketing, email marketing, influencer marketing, website optimization, conversion rate optimization (CRO), performance marketing, digital strategy, and IT solutions.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Brewnok | Revamp Your Expectations">
+<meta property="og:description" content="Brewnok is a leading software development and digital marketing company specializing in custom app development, Software development, web development, SEO, SEM, SMM,ads campaign and IT solutions. Boost your business with expert-driven technology and marketing strategies.">
+<meta property="og:image" content="https://www.youritcompany.com/logo.jpg">
+<meta property="og:url" content="https://www.youritcompany.com">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Brewnok | Revamp Your Expectations">
+<meta name="twitter:description" content="Brewnok is a leading software development and digital marketing company specializing in custom app development, Software development, web development, SEO, SEM, SMM,ads campaign and IT solutions. Boost your business with expert-driven technology and marketing strategies.">
+<meta name="twitter:image" content="https://www.youritcompany.com/logo.jpg">
+
+
+
+
