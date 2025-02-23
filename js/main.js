@@ -52,6 +52,27 @@
         }
     });
 
+    // cookie handler
+    document.addEventListener("DOMContentLoaded", function () {
+        const popup = document.getElementById("cookie-popup");
+        const acceptBtn = document.getElementById("accept-cookies");
+        const declineBtn = document.getElementById("decline-cookies");
+      
+        if (!localStorage.getItem("cookieConsent")) {
+          popup.classList.add("show");
+        }
+      
+        acceptBtn.addEventListener("click", function () {
+          localStorage.setItem("cookieConsent", "accepted");
+          popup.classList.remove("show");
+        });
+      
+        declineBtn.addEventListener("click", function () {
+          localStorage.setItem("cookieConsent", "declined");
+          popup.classList.remove("show");
+        });
+      });
+      
 
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
