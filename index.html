@@ -105,9 +105,9 @@
     </div>
 
   </header>
-  <a href="https://wa.me/917439762782" class="whatsapp-btn" target="_blank">
+  <!-- <a href="https://wa.me/917439762782" class="whatsapp-btn" target="_blank">
     <i class="bi bi-whatsapp"></i>
-  </a>
+  </a> -->
   <main class="main">
 
     <!-- Hero Section -->
@@ -924,114 +924,118 @@
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const btn = document.querySelector('.whatsapp-btn');
-      let isDragging = false;
-      let hasDragged = false;  // New flag to track if dragging occurred
-      let currentX;
-      let currentY;
-      let initialX;
-      let initialY;
+  <!-- <script>
+   document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.querySelector('.whatsapp-btn');
+  let isDragging = false;
+  let hasDragged = false;
+  let currentX;
+  let currentY;
+  let initialX;
+  let initialY;
 
-      // Mouse events
-      btn.addEventListener('mousedown', startDragging);
-      window.addEventListener('mousemove', drag);
-      window.addEventListener('mouseup', stopDragging);
+  // Mouse events
+  btn.addEventListener('mousedown', startDragging);
+  window.addEventListener('mousemove', drag);
+  window.addEventListener('mouseup', stopDragging);
 
-      // Touch events
-      btn.addEventListener('touchstart', startDragging);
-      window.addEventListener('touchmove', drag);
-      window.addEventListener('touchend', stopDragging);
+  // Touch events
+  btn.addEventListener('touchstart', startDragging, { passive: false });
+  window.addEventListener('touchmove', drag, { passive: false });
+  window.addEventListener('touchend', stopDragging);
 
-      // Prevent click after dragging
-      btn.addEventListener('click', (e) => {
-        if (hasDragged) {
-          e.preventDefault();
-          e.stopPropagation();
-          hasDragged = false;  // Reset after preventing click
-        }
-      });
+  // Handle click explicitly for better control
+  btn.addEventListener('click', handleClick);
 
-      function startDragging(e) {
-        e.preventDefault();
-        isDragging = true;
-        hasDragged = false;  // Reset at start
-        btn.style.transition = 'none';
+  function startDragging(e) {
+    isDragging = true;
+    hasDragged = false;
+    btn.style.transition = 'none';
 
-        if (e.type === 'touchstart') {
-          initialX = e.touches[0].clientX - (currentX || 0);
-          initialY = e.touches[0].clientY - (currentY || 0);
-        } else {
-          initialX = e.clientX - (currentX || 0);
-          initialY = e.clientY - (currentY || 0);
-        }
-      }
+    if (e.type === 'touchstart') {
+      initialX = e.touches[0].clientX - (currentX || 0);
+      initialY = e.touches[0].clientY - (currentY || 0);
+    } else {
+      initialX = e.clientX - (currentX || 0);
+      initialY = e.clientY - (currentY || 0);
+    }
 
-      function drag(e) {
-        if (!isDragging) return;
+    // Only prevent default for touchstart to allow click
+    if (e.type === 'touchstart') {
+      e.preventDefault();
+    }
+  }
 
-        e.preventDefault();
-        hasDragged = true;  // Set flag when dragging occurs
-        let clientX = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
-        let clientY = e.type === 'touchmove' ? e.touches[0].clientY : e.clientY;
+  function drag(e) {
+    if (!isDragging) return;
 
-        currentX = clientX - initialX;
-        currentY = clientY - initialY;
+    e.preventDefault();
+    let clientX = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
+    let clientY = e.type === 'touchmove' ? e.touches[0].clientY : e.clientY;
 
-        btn.style.left = currentX + 'px';
-        btn.style.top = currentY + 'px';
-        btn.style.right = 'auto';
-      }
+    currentX = clientX - initialX;
+    currentY = clientY - initialY;
 
-      function stopDragging(e) {
-        if (!isDragging) return;
-        isDragging = false;
-        btn.style.transition = 'background-color 0.3s ease, transform 0.3s ease';
+    // Set hasDragged if there's significant movement
+    if (Math.abs(clientX - initialX) > 5 || Math.abs(clientY - initialY) > 5) {
+      hasDragged = true;
+    }
 
-        const windowWidth = window.innerWidth;
-        const windowHeight = window.innerHeight;
-        const btnWidth = btn.offsetWidth;
-        const btnHeight = btn.offsetHeight;
+    btn.style.left = currentX + 'px';
+    btn.style.top = currentY + 'px';
+    btn.style.right = 'auto';
+  }
 
-        // Snap to sides
-        if (currentX + btnWidth / 2 > windowWidth / 2) {
-          btn.style.left = 'auto';
-          btn.style.right = '20px';
-        } else {
-          btn.style.left = '20px';
-          btn.style.right = 'auto';
-        }
+  function stopDragging(e) {
+    if (!isDragging) return;
+    isDragging = false;
+    btn.style.transition = 'background-color 0.3s ease, transform 0.3s ease';
 
-        // Vertical bounds
-        if (currentY < 20) {
-          btn.style.top = '20px';
-        } else if (currentY + btnHeight > windowHeight - 20) {
-          btn.style.top = (windowHeight - btnHeight - 20) + 'px';
-        }
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+    const btnWidth = btn.offsetWidth;
+    const btnHeight = btn.offsetHeight;
 
-        // Update current position
-        currentX = btn.style.left === 'auto' ? windowWidth - btnWidth - 20 : 20;
-        currentY = parseFloat(btn.style.top);
-      }
-
-      // Initialize position
-      currentX = window.innerWidth - btnWidth - 20;
-      currentY = 100;
-      btn.style.left = currentX + 'px';
-      btn.style.top = currentY + 'px';
+    // Snap to sides
+    if (currentX + btnWidth / 2 > windowWidth / 2) {
+      btn.style.left = 'auto';
+      btn.style.right = '20px';
+    } else {
+      btn.style.left = '20px';
       btn.style.right = 'auto';
+    }
 
-      // Optional: Add your intended click behavior here if needed
-      btn.addEventListener('click', (e) => {
-        if (!hasDragged) {
-          // Add your normal click behavior here, e.g.:
-          // window.open('https://wa.me/yournumber', '_blank');
-          console.log('Button clicked normally');
-        }
-      });
-    });
-  </script>
+    // Vertical bounds
+    if (currentY < 20) {
+      btn.style.top = '20px';
+    } else if (currentY + btnHeight > windowHeight - 20) {
+      btn.style.top = (windowHeight - btnHeight - 20) + 'px';
+    }
+
+    // Update current position
+    currentX = btn.style.left === 'auto' ? windowWidth - btnWidth - 20 : 20;
+    currentY = parseFloat(btn.style.top);
+  }
+
+  function handleClick(e) {
+    if (hasDragged) {
+      e.preventDefault(); // Prevent navigation if dragged
+      hasDragged = false; // Reset
+    } else {
+      // Allow natural link behavior if not dragged
+      console.log('Link clicked/tapped! Navigating to:', btn.href);
+      // The href will work naturally; no need for manual navigation
+    }
+  }
+
+  // Initialize position
+  currentX = window.innerWidth - btnWidth - 20;
+  currentY = 100;
+  btn.style.left = currentX + 'px';
+  btn.style.top = currentY + 'px';
+  btn.style.right = 'auto';
+});
+  </script> -->
 
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
