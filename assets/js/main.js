@@ -206,4 +206,3 @@ var swiper = new Swiper('.swiper-container', {
   navigation: false, // Disable navigation arrows
 });
 
-

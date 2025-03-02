@@ -2702,48 +2702,41 @@ section,
   transform: translateX(5px); /* Moves the arrow to the right */
 }
 
+/* Modified CSS */
 .whatsapp-btn {
   position: fixed;
-  top: 100px; /* Align to the top */
-  right: 20px; /* Align to the right */
-  background-color: #25D366; /* WhatsApp green */
-  border-radius: 50%; /* Round button */
-  width: 40px; /* Button size */
-  height: 40px; /* Button size */
+  top: 100px;
+  right: 20px;
+  background-color: #25D366;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-  z-index: 9999; /* Ensure it's on top of other content */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 9999;
+  cursor: move;
+  user-select: none;
+  touch-action: none; /* Prevents scrolling while dragging on mobile */
 }
 
-/* Hover effect for button */
 .whatsapp-btn:hover {
-  background-color: #0fb34b; /* Darker WhatsApp green */
-  transform: scale(1.1); /* Slightly enlarge on hover */
+  background-color: #0fb34b;
+  transform: scale(1.1);
   color: white;
   animation: bounce 0.6s ease;
 }
 
 @keyframes bounce {
-  0% {
-    transform: scale(1.1) translateY(0);
-  }
-  25% {
-    transform: scale(1.1) translateY(-5px);
-  }
-  50% {
-    transform: scale(1.1) translateY(0);
-  }
-  75% {
-    transform: scale(1.1) translateY(-5px);
-  }
-  100% {
-    transform: scale(1.1) translateY(0);
-  }
+  0% { transform: scale(1.1) translateY(0); }
+  25% { transform: scale(1.1) translateY(-5px); }
+  50% { transform: scale(1.1) translateY(0); }
+  75% { transform: scale(1.1) translateY(-5px); }
+  100% { transform: scale(1.1) translateY(0); }
 }
 .btn-custom {
   display: inline-flex;
