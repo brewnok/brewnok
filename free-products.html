@@ -53,13 +53,35 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .product-link {
+  display: block;
+  padding: 8px 0;
+  text-decoration: none;
+}
 
+.product-link.active {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+#product-content {
+  transition: none;
+}
+
+.free-products-logo {
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  max-height: 100px;
+}
+  </style>
 
 </head>
 
 <body class="service-details-page">
 
- 
+
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div
       class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -125,156 +147,38 @@
 
     <!-- Service Details Section -->
     <section id="service-details" class="service-details section">
-
       <div class="container">
-
         <div class="row gy-5">
-
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-
             <div class="service-box">
-              <h4>Links To Our Free Products</h4>
+              <h4>Our Free Products
+              </h4>
               <div class="services-list">
-                <a href="https://brewnok.github.io/b64gen" target="_blank"><i
+                <a href="#" data-product="b64gen" class="product-link active"><i
                     class="bi bi-arrow-right-circle"></i><span>b64gen</span></a>
-                <a href="https://feedrelic.onrender.com" target="_blank"><i
+                <a href="#" data-product="feedrelic" class="product-link"><i
                     class="bi bi-arrow-right-circle"></i><span>feedrelic</span></a>
-                <a href="https://sizefoto.onrender.com" target="_blank"><i
+                <a href="#" data-product="sizefoto" class="product-link"><i
                     class="bi bi-arrow-right-circle"></i><span>sizefoto</span></a>
-                <a href="https://playsql.onrender.com" target="_blank"><i
+                <a href="#" data-product="playsql" class="product-link"><i
                     class="bi bi-arrow-right-circle"></i><span>playSQL</span></a>
-  
-              <a href="https://brewtask.onrender.com" target="_blank"><i
-                class="bi bi-arrow-right-circle"></i><span>brewtask</span></a>
-
-          <a href="https://seomap.onrender.com" target="_blank"><i
-            class="bi bi-arrow-right-circle"></i><span>seomap</span></a>
-   </div>
+                <a href="#" data-product="brewtask" class="product-link"><i
+                    class="bi bi-arrow-right-circle"></i><span>brewtask</span></a>
+                <a href="#" data-product="seomap" class="product-link"><i
+                    class="bi bi-arrow-right-circle"></i><span>seomap</span></a>
+              </div>
             </div>
-
-            <div class="help-box d-flex flex-column justify-content-center align-items-center">
-              <i class="bi bi-headset help-icon"></i>
-              <h4>Have a Question?</h4>
-              <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>(+91)
-                  7439762782</span></p>
-              <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a
-                  href="mailto:admin@brewnok.com">admin@brewnok.com</a></p>
-            </div>
-
+            <!-- Keep the existing help-box div -->
           </div>
 
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <!-- managerji -->
-            <img src="assets/img/products/b64gen-logo.jpg" alt="" class="img-fluid free-products-logo"><br><br>
-            <!-- <h3 style="font-family: Roboto; text-align: center;" id="whoAreWe">
-              Fastest Base64 Converter
-            </h3> -->
-            <br>
-            <p>
-              <strong>b64gen</strong> is a powerful and fast tool that allows you to convert any image or text into
-              Base64, all without
-              uploading it to any external server. The entire conversion process happens directly within your browser,
-              ensuring privacy and speed. Once the conversion is complete, you can immediately use the Base64 data in
-              your projects.
-            </p>
-            <img src="assets/img/products/b64gen-mockup.jpg" alt="" class="img-fluid"><br><br>
-            <p>
-              Base64 encoding is often required when embedding images directly into HTML or Markdown without the need to
-              store a separate copy of the image. This allows the image to be represented as a string of text, making it
-              easier to include within the code itself.
-            </p>
-            <br><br>
-            <!-- cominQR -->
-            <img src="assets/img/products/feedrelic.png" alt="" class="img-fluid free-products-logo"><br><br>
-            <!-- <h3 style="font-family: Roboto; text-align: center;" id="whoAreWe">
-              New Relic Data Feeder
-            </h3> -->
-            <br>
-            <p>
-              With <strong>feedrelic</strong>, you can easily push your custom events to New Relic Insights without
-              having to write a single line of code for making API calls. This tool streamlines the process, enabling
-              you to focus on your application’s observability and performance metrics while <strong>feedrelic</strong>
-              takes care of the integration.
-            </p>
-            <img src="assets/img/products/feedrelic_mockup.jpg" alt="" class="img-fluid"><br><br>
-            <p>
-              For observability engineers who primarily work with New Relic, there are times when it's necessary to
-              upload dummy datasets into New Relic to test the flexibility of NRQL (New Relic Query Language) or
-              evaluate the alerting mechanisms. <strong>feedrelic</strong> simplifies this process by allowing you to
-              quickly send data to New Relic without the need to directly interact with the New Relic Insights API.
-            </p>
-            <br><br>
-            <!-- slot4dine -->
-            <img src="assets/img/products/sizephotologo.png" alt="" class="img-fluid free-products-logo"><br><br>
-            <!-- <h3 style="font-family: Roboto; text-align: center;" id="whoAreWe">
-              Photo Resizer
-            </h3> -->
-            <br>
-            <p>
-              <strong>sizefoto</strong> is a handy app that allows you to resize your photo to a desired size range (in
-              KB). Simply upload your photo, specify the minimum and maximum size limits in KB, and the app will
-              compress the image to fit within that exact range.
-            </p>
-            <img src="assets/img/products/sizefoto-mockup.jpg" alt="" class="img-fluid"><br><br>
-            <p>
-              <strong>sizefoto</strong> helps by providing an efficient way to resize and compress images to a specific
-              file size range, making it ideal for situations where file size constraints are important. Whether you
-              need to reduce the size of an image for faster uploading, fitting within email attachment limits, or
-              ensuring compatibility with platforms that have size restrictions like online application forms.
-            </p>
-            <br><br>
-
-            <img src="assets/img/products/playsqllogo.png" alt="" class="img-fluid free-products-logo"><br><br>
-            <!-- <h3 style="font-family: Roboto; text-align: center;" id="whoAreWe">
-              Powerful SQL Playground
-            </h3> -->
-            <br>
-            <p>
-              <strong>playSQL</strong> is a platform that allows you to test and enhance your SQL skills. Whether you're
-              a beginner or a professional, you can easily upload your datasets in CSV or Excel format without the need
-              to install any bulky DBMS software. Once uploaded, you can perform various SQL operations directly on the
-              platform.
-            </p>
-            <img src="assets/img/products/playsql-mockup.jpg" alt="" class="img-fluid"><br><br>
-            <p>
-              <strong>playSQL</strong> helps by providing a simple, user-friendly platform for practicing and improving
-              SQL skills without the need to set up complex database management systems.
-            </p>
-            <br><br>
-            <img src="assets/img/products/brewtask-logo.png" alt="" class="img-fluid free-products-logo"><br><br>
-            <!-- <h3 style="font-family: Roboto; text-align: center;" id="whoAreWe">
-              Powerful SQL Playground
-            </h3> -->
-            <br>
-            <p>
-              <strong>brewtask</strong> is aplatform that enables you to add your daily tasks directly in the browser and track their status each day.
-            </p>
-            <img src="assets/img/products/brewtask-mockup.jpg" alt="" class="img-fluid"><br><br>
-            <p>
-              <strong>brewtask</strong> helps you stay organized by prioritizing your tasks effectively. It allows you to track progress, ensuring nothing important slips through the cracks. By keeping responsibilities clear, it reduces stress and boosts productivity. It provides a sense of accomplishment as you check off completed items.
-            </p>
-            <br><br><img src="assets/img/products/seomap-logo.png" alt="" class="img-fluid free-products-logo"><br><br>
-            <!-- <h3 style="font-family: Roboto; text-align: center;" id="whoAreWe">
-              Powerful SQL Playground
-            </h3> -->
-            <br>
-            <p>
-                <strong>seomap</strong> is a specialized tool that generates sitemap.xml files for any website URL you provide. Simply place the generated sitemap.xml in your website's root directory to enhance your site's SEO and help search engines better understand your site structure.
-            </p>
-            <img src="assets/img/products/seomap-mockup.jpg" alt="" class="img-fluid"><br><br>
-            <p>
-                <strong>seomap</strong> plays a crucial role in improving your website's SEO performance. Search engines use sitemap.xml files to efficiently discover and index your website's pages, ensuring better visibility in search results.
-            </p>
-            <br><br>
-
+            <div id="product-content">
+              <!-- Content will be loaded dynamically -->
+            </div>
           </div>
-
         </div>
-
       </div>
-
-    </section><!-- /Service Details Section -->
-
+    </section>
   </main>
 
   <footer id="footer" class="footer">
@@ -358,8 +262,128 @@
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
-     
-  <!-- Vendor JS Files -->
+
+      <script>
+        const productDetails = {
+          b64gen: {
+            logo: "assets/img/products/b64gen-logo.jpg",
+            title: "b64gen",
+            description: `<p><strong>b64gen</strong> is a powerful and fast tool that allows you to convert any image or text into
+              Base64, all without uploading it to any external server. The entire conversion process happens directly within your browser,
+              ensuring privacy and speed. Once the conversion is complete, you can immediately use the Base64 data in your projects.</p>`,
+            image: "assets/img/products/b64gen-mockup.jpg",
+            additional: `<p>Base64 encoding is often required when embedding images directly into HTML or Markdown without the need to
+              store a separate copy of the image. This allows the image to be represented as a string of text, making it
+              easier to include within the code itself.</p>`,
+            liveLink: "https://brewnok.github.io/b64gen"
+          },
+          feedrelic: {
+            logo: "assets/img/products/feedrelic.png",
+            title: "feedrelic",
+            description: `<p>With <strong>feedrelic</strong>, you can easily push your custom events to New Relic Insights without
+              having to write a single line of code for making API calls. This tool streamlines the process, enabling
+              you to focus on your application's observability and performance metrics while <strong>feedrelic</strong>
+              takes care of the integration.</p>`,
+            image: "assets/img/products/feedrelic_mockup.jpg",
+            additional: `<p>For observability engineers who primarily work with New Relic, there are times when it's necessary to
+              upload dummy datasets into New Relic to test the flexibility of NRQL (New Relic Query Language) or
+              evaluate the alerting mechanisms. <strong>feedrelic</strong> simplifies this process by allowing you to
+              quickly send data to New Relic without the need to directly interact with the New Relic Insights API.</p>`,
+            liveLink: "https://feedrelic.onrender.com"
+          },
+          sizefoto: {
+            logo: "assets/img/products/sizephotologo.png",
+            title: "sizefoto",
+            description: `<p><strong>sizefoto</strong> is a handy app that allows you to resize your photo to a desired size range (in
+              KB). Simply upload your photo, specify the minimum and maximum size limits in KB, and the app will
+              compress the image to fit within that exact range.</p>`,
+            image: "assets/img/products/sizefoto-mockup.jpg",
+            additional: `<p><strong>sizefoto</strong> helps by providing an efficient way to resize and compress images to a specific
+              file size range, making it ideal for situations where file size constraints are important. Whether you
+              need to reduce the size of an image for faster uploading, fitting within email attachment limits, or
+              ensuring compatibility with platforms that have size restrictions like online application forms.</p>`,
+            liveLink: "https://sizefoto.onrender.com"
+          },
+          playsql: {
+            logo: "assets/img/products/playsqllogo.png",
+            title: "playSQL",
+            description: `<p><strong>playSQL</strong> is a platform that allows you to test and enhance your SQL skills. Whether you're
+              a beginner or a professional, you can easily upload your datasets in CSV or Excel format without the need
+              to install any bulky DBMS software. Once uploaded, you can perform various SQL operations directly on the
+              platform.</p>`,
+            image: "assets/img/products/playsql-mockup.jpg",
+            additional: `<p><strong>playSQL</strong> helps by providing a simple, user-friendly platform for practicing and improving
+              SQL skills without the need to set up complex database management systems.</p>`,
+            liveLink: "https://playsql.onrender.com"
+          },
+          brewtask: {
+            logo: "assets/img/products/brewtask-logo.png",
+            title: "brewtask",
+            description: `<p><strong>brewtask</strong> is a platform that enables you to add your daily tasks directly in the browser and track their status each day.</p>`,
+            image: "assets/img/products/brewtask-mockup.jpg",
+            additional: `<p><strong>brewtask</strong> helps you stay organized by prioritizing your tasks effectively. It allows you to track progress, ensuring nothing important slips through the cracks. By keeping responsibilities clear, it reduces stress and boosts productivity. It provides a sense of accomplishment as you check off completed items.</p>`,
+            liveLink: "https://brewtask.onrender.com"
+          },
+          seomap: {
+            logo: "assets/img/products/seomap-logo.png",
+            title: "seomap",
+            description: `<p><strong>seomap</strong> is a specialized tool that generates sitemap.xml files for any website URL you provide. Simply place the generated sitemap.xml in your website's root directory to enhance your site's SEO and help search engines better understand your site structure.</p>`,
+            image: "assets/img/products/seomap-mockup.jpg",
+            additional: `<p><strong>seomap</strong> plays a crucial role in improving your website's SEO performance. Search engines use sitemap.xml files to efficiently discover and index your website's pages, ensuring better visibility in search results.</p>`,
+            liveLink: "https://seomap.onrender.com"
+          }
+        };
+        
+        // Pre-render all product HTML content
+        const preRenderedContent = {};
+        
+        // Initialize content when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+          const productLinks = document.querySelectorAll('.product-link');
+          const contentDiv = document.getElementById('product-content');
+        
+          // Preload all images
+          Object.values(productDetails).forEach(product => {
+            const logoImg = new Image();
+            logoImg.src = product.logo;
+            const mockupImg = new Image();
+            mockupImg.src = product.image;
+          });
+        
+          // Pre-render all product HTML
+          Object.entries(productDetails).forEach(([id, product]) => {
+            preRenderedContent[id] = `
+              <img src="${product.logo}" alt="${product.title}" class="img-fluid free-products-logo">
+              <br><br>
+              ${product.description}
+              <img src="${product.image}" alt="${product.title}" class="img-fluid">
+              <br><br>
+              ${product.additional}
+              <div class="text-center mt-4">
+                <a href="${product.liveLink}" target="_blank" class="btn btn-primary">Try ${product.title}</a>
+              </div>
+            `;
+          });
+        
+          // Show first product by default
+          contentDiv.innerHTML = preRenderedContent['b64gen'];
+        
+          // Add click handlers to all product links
+          productLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+              e.preventDefault();
+              const productId = this.dataset.product;
+              
+              // Update content instantly from pre-rendered HTML
+              contentDiv.innerHTML = preRenderedContent[productId];
+              
+              // Update active state
+              productLinks.forEach(l => l.classList.remove('active'));
+              this.classList.add('active');
+            });
+          });
+        });
+        </script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>

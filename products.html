@@ -53,7 +53,31 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
+  <style>
+    .product-link {
+      display: block;
+      padding: 8px 0;
+      text-decoration: none;
+    }
+    
+    .product-link.active {
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+    
+    #product-content {
+      transition: none;
+    }
+    
+    .products-logo {
+      width: auto;
+      display: block;
+      margin: 0 auto;
+      max-height: 100px;
+    }
+  
+    
+    </style>
 
 </head>
 
@@ -67,7 +91,6 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <img src="assets/img/brewnok-logo.png" alt="">
-        <!-- <h1 class="sitename">iLanding</h1> -->
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -126,160 +149,43 @@
 
     <!-- Service Details Section -->
     <section id="service-details" class="service-details section">
-
       <div class="container">
-
         <div class="row gy-5">
-
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-
             <div class="service-box">
               <h4>Our Premium Products</h4>
               <div class="services-list">
-                <a><i class="bi bi-arrow-right-circle"></i><span>managerji</span></a>
-                <a><i class="bi bi-arrow-right-circle"></i><span>cominQR</span></a>
-                <a><i class="bi bi-arrow-right-circle"></i><span>slot4dine</span></a>
+                <a href="#" data-product="managerji" class="product-link active"><i class="bi bi-arrow-right-circle"></i><span>managerji</span></a>
+                <a href="#" data-product="cominqr" class="product-link"><i class="bi bi-arrow-right-circle"></i><span>cominQR</span></a>
+                <a href="#" data-product="slot4dine" class="product-link"><i class="bi bi-arrow-right-circle"></i><span>slot4dine</span></a>
               </div>
             </div>
-
+    
             <div class="service-box">
               <h4>Download</h4>
               <div class="download-catalog">
-                <a target="_blank"><i class="bi bi-filetype-pdf"></i><span>managerji Deck</span></a>
-                <a target="_blank"><i class="bi bi-filetype-pdf"></i><span>cominQR Deck</span></a>
-                <a target="_blank"><i class="bi bi-filetype-pdf"></i><span>slot4dine Deck</span></a>
+                <a href="#" target="_blank"><i class="bi bi-filetype-pdf"></i><span>managerji Deck</span></a>
+                <a href="#" target="_blank"><i class="bi bi-filetype-pdf"></i><span>cominQR Deck</span></a>
+                <a href="#" target="_blank"><i class="bi bi-filetype-pdf"></i><span>slot4dine Deck</span></a>
               </div>
             </div>
-
-
-
-
+    
             <div class="help-box d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-headset help-icon"></i>
               <h4>Have a Question?</h4>
-              <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>(+91)
-                  7439762782</span></p>
-              <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a
-                  href="mailto:admin@brewnok.com">admin@brewnok.com</a></p>
+              <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>(+91) 7439762782</span></p>
+              <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="mailto:admin@brewnok.com">admin@brewnok.com</a></p>
             </div>
-
           </div>
-
+    
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <!-- managerji -->
-            <img src="assets/img/products/managerji-logo.png" alt="" class="img-fluid"><br><br>
-            <!-- <h1 style="font-family: Roboto;" id="whoAreWe">
-              Hotel Management Software
-            </h1> -->
-            <br>
-            <p>
-              <strong>managerji</strong> is a cutting-edge hotel management solution that streamlines every aspect of
-              hotel operations,
-              from check-ins to check-outs. With a clean, intuitive interface, the application makes it easy for hotel
-              managers to handle guest arrivals and departures with minimal effort. The system tracks room availability
-              in real-time and allows managers to quickly update room statuses, ensuring a smooth and efficient
-              workflow. Whether you're handling a single floor or multiple levels, <strong>managerji</strong> offers
-              seamless floor
-              management, making it ideal for hotels of all sizes.
-            </p>
-            <img src="assets/img/products/managerji-mockup.jpg" alt="" class="img-fluid"><br><br>
-            <p>
-              One of <strong>managerji</strong>'s standout features is its powerful service management system, which
-              allows hotel
-              managers to easily track and update in-room services. From restaurant orders to room requests, everything
-              is tracked in one place. The system is fully customizable to meet the specific needs of your hotel, with
-              the ability to modify room configurations, service types, and pricing. Plus, <strong>managerji</strong>
-              ensures data
-              security with automatic backups and provides insightful analytics that help you make data-driven decisions
-              to optimize your operations.
-            </p>
-            <p>
-              What sets <strong>managerji</strong> apart from other hotel management solutions is its offline
-              functionality. Unlike many
-              hotel management applications that require a constant internet connection, <strong>managerji</strong>
-              operates smoothly
-              even without an internet connection. This means you can continue managing your hotel seamlessly without
-              worrying about connectivity issues. Additionally, the application runs directly in any browser, ensuring
-              minimal system load and optimized performance, even on devices with limited resources. Experience the
-              convenience, efficiency, and reliability of <strong>managerji</strong> today and elevate your hotel's
-              management
-              experience.
-            </p>
-            <br><br>
-            <!-- cominQR -->
-            <img src="assets/img/products/cominqr-logo.png" alt="" class="img-fluid"><br><br>
-            <!-- <h1 style="font-family: Roboto;" id="whoAreWe">
-              Next-Gen Ticketing
-            </h1> -->
-            <br>
-            <p>
-              <strong>cominQR</strong> is a next-generation ticketing solution that simplifies event management by
-              providing a seamless
-              and secure experience for both organizers and attendees. The app generates a unique QR code for each
-              participant, ensuring that every ticket is personalized and authentic. Organizers can easily scan these
-              codes at the venue for quick entry, eliminating the hassle of paper tickets and manual check-ins. This
-              digital approach enhances the attendee experience, allowing for faster, more efficient event access and
-              reducing wait times at entrances.
-            </p>
-            <img src="assets/img/products/cominqr-mockup.jpg" alt="" class="img-fluid"><br><br>
-            <p>
-              A key feature of <strong>cominQR</strong> is its user-friendly admin panel, which gives event organizers
-              complete control
-              over attendee management. Through the dashboard, organizers can easily access and modify attendee
-              information, such as ticket details, check-in status, and personal data. This centralized system helps
-              streamline event operations by providing real-time updates and allowing for immediate adjustments as
-              needed. Additionally, the admin panel provides insights into ticket sales and attendance, empowering
-              organizers to make data-driven decisions and improve future event planning.
-            </p>
-            <p>
-              What truly sets <strong>cominQR</strong> apart is its flexibility and scalability. Whether it's a small
-              local gathering or
-              a large-scale event, <strong>cominQR</strong> adapts to suit the unique needs of each event. Its
-              customizable features,
-              such as ticket categories and access control options, give organizers the ability to tailor the experience
-              to their specific requirements. With robust security measures in place, including encrypted QR codes and
-              data protection, <strong>cominQR</strong> ensures a safe and efficient ticketing process for all users.
-
-            </p>
-            <br><br>
-            <!-- slot4dine -->
-            <img src="assets/img/products/slot4dine-logo.png" alt="" class="img-fluid"><br><br>
-            <!-- <h1 style="font-family: Roboto;" id="whoAreWe">
-              Reservation System
-            </h1> -->
-            <br>
-            <p>
-              <strong>slot4dine</strong> is a comprehensive reservation system designed to simplify the process of
-              managing restaurant
-              bookings. With its intuitive platform, customers can easily make reservations online, ensuring that they
-              secure a spot at their preferred time and date. Whether it's a casual dinner or a special event,
-              <strong>slot4dine</strong>
-              provides a seamless booking experience for guests, reducing the chances of overbooking and enhancing
-              customer satisfaction. The system is adaptable to various types of restaurants, from small cafes to large
-              fine dining establishments.
-            </p>
-            <img src="assets/img/products/slot4dine-mockup.jpg" alt="" class="img-fluid"><br><br>
-            <p>
-              A key feature of <strong>slot4dine</strong> is its user-friendly admin panel, which gives event organizers
-              complete control
-              over all bookings. This centralized system helps streamline restaurant operations by providing real-time
-              updates and allowing for immediate adjustments as needed. What truly sets <strong>slot4dine</strong> apart
-              is its
-              flexibility and scalability. Whether it's a small or large scale restaurant, <strong>slot4dine</strong>
-              adapts to suit the
-              unique needs of each type of restaurant.
-            </p>
-            <br><br>
-
-
+            <div id="product-content">
+              <!-- Content will be loaded dynamically -->
+            </div>
           </div>
-
         </div>
-
       </div>
-
-    </section><!-- /Service Details Section -->
-
+    </section>
   </main>
 
   <footer id="footer" class="footer">
@@ -363,7 +269,103 @@
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
-     
+      <script>
+        const productDetails = {
+          managerji: {
+            logo: "assets/img/products/managerji-logo.png",
+            title: "managerji",
+            description: `<p><strong>managerji</strong> is a cutting-edge hotel management solution that streamlines every aspect of
+              hotel operations, from check-ins to check-outs. With a clean, intuitive interface, the application makes it easy for hotel
+              managers to handle guest arrivals and departures with minimal effort. The system tracks room availability
+              in real-time and allows managers to quickly update room statuses, ensuring a smooth and efficient
+              workflow. Whether you're handling a single floor or multiple levels, <strong>managerji</strong> offers
+              seamless floor management, making it ideal for hotels of all sizes.</p>`,
+            image: "assets/img/products/managerji-mockup.jpg",
+            additional: `<p>One of <strong>managerji</strong>'s standout features is its powerful service management system, which
+              allows hotel managers to easily track and update in-room services. From restaurant orders to room requests, everything
+              is tracked in one place. The system is fully customizable to meet the specific needs of your hotel, with
+              the ability to modify room configurations, service types, and pricing.</p>
+              <p>What sets <strong>managerji</strong> apart from other hotel management solutions is its offline
+              functionality. Unlike many hotel management applications that require a constant internet connection, <strong>managerji</strong>
+              operates smoothly even without an internet connection. This means you can continue managing your hotel seamlessly without
+              worrying about connectivity issues.</p>`
+          },
+          cominqr: {
+            logo: "assets/img/products/cominqr-logo.png",
+            title: "cominQR",
+            description: `<p><strong>cominQR</strong> is a next-generation ticketing solution that simplifies event management by
+              providing a seamless and secure experience for both organizers and attendees. The app generates a unique QR code for each
+              participant, ensuring that every ticket is personalized and authentic. Organizers can easily scan these
+              codes at the venue for quick entry, eliminating the hassle of paper tickets and manual check-ins.</p>`,
+            image: "assets/img/products/cominqr-mockup.jpg",
+            additional: `<p>A key feature of <strong>cominQR</strong> is its user-friendly admin panel, which gives event organizers
+              complete control over attendee management. Through the dashboard, organizers can easily access and modify attendee
+              information, such as ticket details, check-in status, and personal data.</p>
+              <p>What truly sets <strong>cominQR</strong> apart is its flexibility and scalability. Whether it's a small local gathering or
+              a large-scale event, <strong>cominQR</strong> adapts to suit the unique needs of each event. Its customizable features,
+              such as ticket categories and access control options, give organizers the ability to tailor the experience
+              to their specific requirements.</p>`
+          },
+          slot4dine: {
+            logo: "assets/img/products/slot4dine-logo.png",
+            title: "slot4dine",
+            description: `<p><strong>slot4dine</strong> is a comprehensive reservation system designed to simplify the process of
+              managing restaurant bookings. With its intuitive platform, customers can easily make reservations online, ensuring that they
+              secure a spot at their preferred time and date. Whether it's a casual dinner or a special event,
+              <strong>slot4dine</strong> provides a seamless booking experience for guests.</p>`,
+            image: "assets/img/products/slot4dine-mockup.jpg",
+            additional: `<p>A key feature of <strong>slot4dine</strong> is its user-friendly admin panel, which gives event organizers
+              complete control over all bookings. This centralized system helps streamline restaurant operations by providing real-time
+              updates and allowing for immediate adjustments as needed.</p>
+              <p>What truly sets <strong>slot4dine</strong> apart is its flexibility and scalability. Whether it's a small or large scale restaurant,
+              <strong>slot4dine</strong> adapts to suit the unique needs of each type of restaurant.</p>`
+          }
+        };
+        
+        document.addEventListener('DOMContentLoaded', function() {
+          const productLinks = document.querySelectorAll('.product-link');
+          const contentDiv = document.getElementById('product-content');
+        
+          // Preload all images
+          Object.values(productDetails).forEach(product => {
+            const logoImg = new Image();
+            logoImg.src = product.logo;
+            const mockupImg = new Image();
+            mockupImg.src = product.image;
+          });
+        
+          // Pre-render all product HTML
+          const preRenderedContent = {};
+          Object.entries(productDetails).forEach(([id, product]) => {
+            preRenderedContent[id] = `
+              <img src="${product.logo}" alt="${product.title}" class="img-fluid products-logo">
+              <br><br>
+              ${product.description}
+              <img src="${product.image}" alt="${product.title}" class="img-fluid">
+              <br><br>
+              ${product.additional}
+            `;
+          });
+        
+          // Show first product by default
+          contentDiv.innerHTML = preRenderedContent['managerji'];
+        
+          // Add click handlers
+          productLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+              e.preventDefault();
+              const productId = this.dataset.product;
+              
+              // Update content instantly
+              contentDiv.innerHTML = preRenderedContent[productId];
+              
+              // Update active state
+              productLinks.forEach(l => l.classList.remove('active'));
+              this.classList.add('active');
+            });
+          });
+        });
+        </script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
