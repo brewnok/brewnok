@@ -317,7 +317,13 @@
               file size range, making it ideal for situations where file size constraints are important. Whether you
               need to reduce the size of an image for faster uploading, fitting within email attachment limits, or
               ensuring compatibility with platforms that have size restrictions like online application forms.</p>`,
-            liveLink: "https://sizefoto.onrender.com"
+            liveLink: "https://sizefoto.onrender.com",
+            buttonsHtml: `
+              <div class="text-center mt-4">
+                <a href="https://sizefoto.onrender.com" target="_blank" class="btn btn-primary me-2">Try sizefoto</a>
+                <a href="app/sizefoto.apk" download class="btn btn-success">Download Android App</a>
+              </div>
+            `
           },
           playsql: {
             logo: "assets/img/products/playsqllogo.png",
@@ -374,9 +380,11 @@
               <img src="${product.image}" alt="${product.title}" class="img-fluid">
               <br><br>
               ${product.additional}
-              <div class="text-center mt-4">
-                <a href="${product.liveLink}" target="_blank" class="btn btn-primary">Try ${product.title}</a>
-              </div>
+              ${product.buttonsHtml || `
+                <div class="text-center mt-4">
+                  <a href="${product.liveLink}" target="_blank" class="btn btn-primary">Try ${product.title}</a>
+                </div>
+              `}
             `;
           });
         
