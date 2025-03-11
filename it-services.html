@@ -67,46 +67,29 @@
     <div
       class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/brewnoklogo2.png" alt="">
-        <!-- <h1 class="sitename">iLanding</h1> -->
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0" title="Return to Brewnok Homepage">
+        <img src="assets/img/brewnoklogo2.png" alt="Brewnok Company Logo">
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
-
-          <li class="dropdown"><a class="active"><span>Services</span> <i
-                class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="index.html" title="Go to Homepage">Home</a></li>
+          <li class="dropdown">
+            <a class="active" title="View Our Services"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="it-services.html">IT Services</a></li>
-              <li><a href="digital-marketing-services.html">Digital Marketing Services</a></li>
+              <li><a href="it-services.html" title="View IT Services">IT Services</a></li>
+              <li><a href="digital-marketing-services.html" title="Explore Digital Marketing Services">Digital Marketing Services</a></li>
             </ul>
           </li>
-
-          <!-- <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#">managerji</a></li>
-            <li><a href="#">cominQR</a></li>
-            <li><a href="#">slot4dine</a></li>
-          </ul>
-        </li> -->
-
-          <li><a href="products.html">Products</a></li>
-
-          <li><a href="free-products.html">Free Products</a></li>
-
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-
+          <li><a href="products.html" title="Browse Our Products">Products</a></li>
+          <li><a href="free-products.html" title="Access Free Tools">Free Products</a></li>
+          <li><a href="about.html" title="Learn About Us">About</a></li>
+          <li><a href="contact.html" title="Contact Us">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-
-
       <a class="btn-getstarted" href="https://forms.gle/i9rpynCyUjmaMmzQ9" target="_blank">Get Quote</a>
-
 
     </div>
 
@@ -139,20 +122,35 @@
             <div class="service-box">
               <h4>IT Services</h4>
               <div class="services-list">
-                <a><i class="bi bi-arrow-right-circle"></i><span>Software Development</span></a>
-                <a><i class="bi bi-arrow-right-circle"></i><span>Website Development</span></a>
-                <a><i class="bi bi-arrow-right-circle"></i><span>Quality Assurance</span></a>
-                <a><i class="bi bi-arrow-right-circle"></i><span>Observability & Data Analytics</span></a>
-                <a><i class="bi bi-arrow-right-circle"></i><span>Database Administration</span></a>
-                <a><i class="bi bi-arrow-right-circle"></i><span>Automation Solutions</span></a>
+                <a href="#softwareDevelopment" title="Learn about our Software Development Services">
+                  <i class="bi bi-arrow-right-circle"></i><span>Software Development</span>
+                </a>
+                <a href="#websiteDevelopment" title="Learn about our Website Development Services">
+                  <i class="bi bi-arrow-right-circle"></i><span>Website Development</span>
+                </a>
+                <a href="#qualityAssurance" title="Learn about our Quality Assurance Services">
+                  <i class="bi bi-arrow-right-circle"></i><span>Quality Assurance</span>
+                </a>
+                <a href="#observabilityAnalytics" title="Learn about our Observability & Analytics Services">
+                  <i class="bi bi-arrow-right-circle"></i><span>Observability & Data Analytics</span>
+                </a>
+                <a href="#databaseAdministration" title="Learn about our Database Administration Services">
+                  <i class="bi bi-arrow-right-circle"></i><span>Database Administration</span>
+                </a>
+                <a href="#automationSolutions" title="Learn about our Automation Solutions">
+                  <i class="bi bi-arrow-right-circle"></i><span>Automation Solutions</span>
+                </a>
               </div>
             </div>
 
             <div class="service-box">
               <h4>Download</h4>
               <div class="download-catalog">
-                <a href="assets/data/brewnok-it-services-deck.pdf" target="_blank"><i
-                    class="bi bi-filetype-pdf"></i><span>IT Deck</span></a>
+                <a href="assets/data/brewnok-it-services-deck.pdf" 
+                   target="_blank" 
+                   title="Download our IT Services Information Deck">
+                  <i class="bi bi-filetype-pdf"></i><span>IT Deck</span>
+                </a>
               </div>
             </div>
 
@@ -169,7 +167,10 @@
           </div>
 
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/it-services-banner.png" alt="" class="img-fluid brewnok-about-img"><br><br><br>
+            <img src="assets/img/it-services-banner.png" 
+                 alt="Brewnok IT Services Overview" 
+                 title="Our IT Service Offerings"
+                 class="img-fluid brewnok-about-img"><br><br><br>
 
             <h1 style="font-family: Roboto;" id="softwareDevelopment">
               <i class="bi bi-code"></i> Software Development
@@ -395,45 +396,45 @@
             }
           </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/tech-stack/01-python.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/01A-dotnet.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/02-javascript.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/03-typescript.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/04-github.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/05-go.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/06-jenkins.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/07-git.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/08-html.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/09-css.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/36-tailwindcss.png" class="img-fluid" alt="">
+            <div class="swiper-slide"><img src="assets/img/tech-stack/01-python.png" alt="Python" class="img-fluid"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/01A-dotnet.png" alt=".NET"  class="img-fluid"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/02-javascript.png" alt="JavaScript" class="img-fluid"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/03-typescript.png" class="img-fluid" alt="TypeScript"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/04-github.png" class="img-fluid" alt="GitHub"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/05-go.png" class="img-fluid" alt="Golang"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/06-jenkins.png" class="img-fluid" alt="Jenkins"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/07-git.png" class="img-fluid" alt="Git"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/08-html.png" class="img-fluid" alt="HTML"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/09-css.png" class="img-fluid" alt="CSS"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/36-tailwindcss.png" class="img-fluid" alt="Tailwind">
             </div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/10-angular.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/11-react.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/12-nodejs.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/13-jquery.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/14-vite.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/15-shopify.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/16-nextjs.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/17-new-relic.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/18-datadog.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/19-dynatrace.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/20-appd.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/21-powerbi.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/22-grafana.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/23-prometheus.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/24-kibana.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/25-mysql.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/26-postgresql.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/27-mongodb.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/28-loadrunner.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/29-jmeter.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/30-neoload.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/31-selenium.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/32-rpa.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/33-automationaw.png" class="img-fluid" alt="">
+            <div class="swiper-slide"><img src="assets/img/tech-stack/10-angular.png" class="img-fluid" alt="Angular"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/11-react.png" class="img-fluid" alt="ReactJS"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/12-nodejs.png" class="img-fluid" alt="NodeJS"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/13-jquery.png" class="img-fluid" alt="jQuery"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/14-vite.png" class="img-fluid" alt="Vite"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/15-shopify.png" class="img-fluid" alt="Shopify"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/16-nextjs.png" class="img-fluid" alt="NextJS"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/17-new-relic.png" class="img-fluid" alt="New Relic"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/18-datadog.png" class="img-fluid" alt="DataDog"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/19-dynatrace.png" class="img-fluid" alt="Dynatrace"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/20-appd.png" class="img-fluid" alt="Appdynamics"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/21-powerbi.png" class="img-fluid" alt="PowerBI"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/22-grafana.png" class="img-fluid" alt="Grafana"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/23-prometheus.png" class="img-fluid" alt="Prometheus"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/24-kibana.png" class="img-fluid" alt="Kibana"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/25-mysql.png" class="img-fluid" alt="MySQL"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/26-postgresql.png" class="img-fluid" alt="PostgreSQL"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/27-mongodb.png" class="img-fluid" alt="MongoDB"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/28-loadrunner.png" class="img-fluid" alt="LoadRunner"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/29-jmeter.png" class="img-fluid" alt="JMeter"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/30-neoload.png" class="img-fluid" alt="Neoload"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/31-selenium.png" class="img-fluid" alt="Selenium"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/32-rpa.png" class="img-fluid" alt="RPA"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/33-automationaw.png" class="img-fluid" alt="Automation Anywhere">
             </div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/34-uipath.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/tech-stack/35-puppeteer.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/34-uipath.png" class="img-fluid" alt="UIPath"></div>
+            <div class="swiper-slide"><img src="assets/img/tech-stack/35-puppeteer.png" class="img-fluid" alt="Puppeteer"></div>
 
 
 
@@ -447,8 +448,8 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-3 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/brewnoklogo2.png" alt="">
+          <a href="index.html" class="logo d-flex align-items-center" title="Return to Homepage">
+            <img src="assets/img/brewnoklogo2.png" alt="Brewnok Company Logo">
           </a>
           <div class="footer-contact pt-0">
             <p>Agartala, Tripura, IN 799007</p>
@@ -456,11 +457,21 @@
             <p><strong><i class="bi bi-envelope"></i> </strong> <span>admin@brewnok.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href="https://www.x.com/brewnokofficial" target="_blank"><i class="bi bi-twitter-x"></i></a>
-            <a href="https://www.facebook.com/brewnok" target="_blank"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/brewnok" target="_blank"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/brewnok" target="_blank"><i class="bi bi-linkedin"></i></a>
-            <a href="https://wa.me/917439762782" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.x.com/brewnokofficial" target="_blank" title="Follow Us on X (Twitter)">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://www.facebook.com/brewnok" target="_blank" title="Connect with Us on Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/brewnok" target="_blank" title="Follow Us on Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/brewnok" target="_blank" title="Connect on LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://wa.me/917439762782" target="_blank" title="Message Us on WhatsApp">
+              <i class="bi bi-whatsapp"></i>
+            </a>
 
           </div>
         </div>
@@ -523,8 +534,8 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" title="Scroll to Top">
+    <i class="bi bi-arrow-up-short"></i></a>
       
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
