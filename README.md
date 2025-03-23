@@ -42,12 +42,12 @@ Founded on January 7th, 2025, brewnok is a leading software development and digi
 
 ## Free Tools
 
-- **b64gen** : Image / text to base64 converter
-- **feedrelic** : UI based New Relic data feeder
-- **sizefoto** : Photo resizer which can resize photo within user given size limit (max and min size in KB)
-- **playSQL** : SQL playground where SQL learners can perform queries over Excel or CSV sheet
-- **seomap** : Sitemap generator for websites
-- **brewtask** : In-browser to-do application
+- **b64gen** : Image / text to base64 converter - [Link](https://brewnok.github.io/b64gen)
+- **feedrelic** : UI based New Relic data feeder - [Link](https://feedrelic.onrender.com)
+- **sizefoto** : Photo resizer which can resize photo within user given size limit (max and min size in KB) - [Link](https://sizefoto.onrender.com)
+- **playSQL** : SQL playground where SQL learners can perform queries over Excel or CSV sheet - [Link](https://playsql.onrender.com)
+- **seomap** : Sitemap generator for websites - [Link](https://seomap.onrender.com)
+- **brewtask** : In-browser to-do application - [Link](https://brewtask.onrender.com)
 
 ## Contact Us
 Feel free to reach out to us for any inquiries or to get a customized quote for our services/products. We are here to help your business grow exponentially with top-tier IT and digital marketing services.<br>
@@ -56,4 +56,7 @@ Feel free to reach out to us for any inquiries or to get a customized quote for 
 **Phone:** (+91) 7439762782<br>
 **Email:** admin@brewnok.com<br>
 **WhatsApp:** [Say Hi on WhatsApp](https://wa.me/+917439762782)<br>
-**Website:** [https://brewnok.com](https://brewnok.com)<br>
+**Contact form:** : [Link](https://docs.google.com/forms/d/e/1FAIpQLScNFg6Rn8ttScewsAFi64enU5nkP6TLFxjs407gPYSvf7KH7w/viewform)
+**Website:** [brewnok.com](https://brewnok.com)<br>
+**Get a quote:** [Link](https://docs.google.com/forms/d/e/1FAIpQLSeK1ys270kxZzoE3FPLwiaKokf3SCsKV_qcXZXp8pjVrcLvCQ/viewform?pli=1)<br>
+**Book a meeting:** [Link](https://calendly.com/shayan-brewnok/30min)<br>
