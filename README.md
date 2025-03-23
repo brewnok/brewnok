@@ -1,10 +1,8 @@
 # brewnok
 
-**Website:** [https://brewnok.com](https://brewnok.com)
-
-**Location:** Agartala, Tripura, India
-
-**Contact:** (+91) 7439762782 | admin@brewnok.com
+**Website:** [https://brewnok.com](https://brewnok.com)<br>
+**Location:** Agartala, Tripura, India<br>
+**Contact:** (+91) 7439762782 | admin@brewnok.com<br>
 
 ## About Us
 
@@ -56,7 +54,7 @@ Founded on January 7th, 2025, brewnok is a leading software development and digi
 - **brewtask**
 
 ## Contact Us
-Feel free to reach out to us for any inquiries or to get a customized quote for our services/products. We are here to help your business grow exponentially with top-tier IT and digital marketing services.<br><br>
+Feel free to reach out to us for any inquiries or to get a customized quote for our services/products. We are here to help your business grow exponentially with top-tier IT and digital marketing services.<br>
 
 **Address:** Agartala, Tripura, India<br>
 **Phone:** (+91) 7439762782<br>
