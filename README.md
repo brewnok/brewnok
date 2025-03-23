@@ -56,7 +56,7 @@ Feel free to reach out to us for any inquiries or to get a customized quote for 
 **Phone:** (+91) 7439762782<br>
 **Email:** admin@brewnok.com<br>
 **WhatsApp:** [Say Hi on WhatsApp](https://wa.me/+917439762782)<br>
-**Contact form:** : [Link](https://docs.google.com/forms/d/e/1FAIpQLScNFg6Rn8ttScewsAFi64enU5nkP6TLFxjs407gPYSvf7KH7w/viewform)
+**Contact form:** : [Link](https://docs.google.com/forms/d/e/1FAIpQLScNFg6Rn8ttScewsAFi64enU5nkP6TLFxjs407gPYSvf7KH7w/viewform)<br>
 **Website:** [brewnok.com](https://brewnok.com)<br>
 **Get a quote:** [Link](https://docs.google.com/forms/d/e/1FAIpQLSeK1ys270kxZzoE3FPLwiaKokf3SCsKV_qcXZXp8pjVrcLvCQ/viewform?pli=1)<br>
 **Book a meeting:** [Link](https://calendly.com/shayan-brewnok/30min)<br>
