@@ -33,21 +33,21 @@ Founded on January 7th, 2025, brewnok is a leading software development and digi
 
 ## Our Products
 
-- **managerji**
-- **cominQR**
-- **slot4dine**
-- **hupwiz**
-- **schedmate**
-- **buildingBugs**
+- **managerji** : End to end hotel management software
+- **cominQR** : Ticket management system for events
+- **slot4dine** : Restaurant table reservation system
+- **hupwiz** : End to end gym management system
+- **schedmate** : Appointment management system
+- **buildingBugs** : Building/Apartment ticket management system
 
 ## Free Tools
 
-- **b64gen**
-- **feedrelic**
-- **sizefoto**
-- **playSQL**
-- **seomap**
-- **brewtask**
+- **b64gen** : Image / text to base64 converter
+- **feedrelic** : UI based New Relic data feeder
+- **sizefoto** : Photo resizer which can resize photo within user given size limit (max and min size in KB)
+- **playSQL** : SQL playground where SQL learners can perform queries over Excel or CSV sheet
+- **seomap** : Sitemap generator for websites
+- **brewtask** : In-browser to-do application
 
 ## Contact Us
 Feel free to reach out to us for any inquiries or to get a customized quote for our services/products. We are here to help your business grow exponentially with top-tier IT and digital marketing services.<br>
