@@ -56,10 +56,10 @@ Founded on January 7th, 2025, brewnok is a leading software development and digi
 - **brewtask**
 
 ## Contact Us
-Feel free to reach out to us for any inquiries or to get a customized quote for our services/products. We are here to help your business grow exponentially with top-tier IT and digital marketing services.
+Feel free to reach out to us for any inquiries or to get a customized quote for our services/products. We are here to help your business grow exponentially with top-tier IT and digital marketing services.<br><br>
 
-**Address:** Agartala, Tripura, India
-**Phone:** (+91) 7439762782
-**Email:** admin@brewnok.com
-**WhatsApp:** [Say Hi on WhatsApp](https://wa.me/+917439762782)
-**Website:** [https://brewnok.com](https://brewnok.com)
+**Address:** Agartala, Tripura, India<br>
+**Phone:** (+91) 7439762782<br>
+**Email:** admin@brewnok.com<br>
+**WhatsApp:** [Say Hi on WhatsApp](https://wa.me/+917439762782)<br>
+**Website:** [https://brewnok.com](https://brewnok.com)<br>
