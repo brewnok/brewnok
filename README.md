@@ -2,8 +2,6 @@
   <img src="assets/brewnok-logo.png" alt="Brewnok logo" width="180" height="auto" />
 </p>
 
-# Brewnok
-
 Brewnok is a technology and automation company focused on IT, SRE, software development, and operational excellence. We help businesses reduce downtime, streamline operations, and automate complex workflows so teams can focus on growth.
 
 ## Overview
