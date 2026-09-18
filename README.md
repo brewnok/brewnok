@@ -1,5 +1,5 @@
 <p>
-  <img src="https://brewnok.com/assets/brewnok-logo.png" alt="Brewnok logo" width="50%" height="auto" />
+  <img src="https://brewnok.com/assets/brewnok-logo.png" alt="Brewnok logo" width="20%" height="auto" />
 </p>
 Website : https://brewnok.com
 
